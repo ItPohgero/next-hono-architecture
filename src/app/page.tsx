@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Home() {
 	useEffect(() => {
 		(async () => {
-			const resp = await client.api.v1.hello.$get();
+			const resp = await client.api.v1.main.hello.$get();
 			if (resp.ok) {
 				const a = await resp.json();
 				console.log({ a });

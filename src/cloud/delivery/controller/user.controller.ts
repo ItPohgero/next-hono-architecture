@@ -1,6 +1,6 @@
-import { UserUseCase } from "@/cloud/usecase/user.usecase";
+import type { UserUseCase } from "@/cloud/domain/usecase/user.usecase";
 import type { Context } from "hono";
-import { UserCreateRequest } from "../dto/user.dto";
+import type { UserCreateRequest } from "../dto/user.dto";
 
 class UserController {
 	constructor(private readonly ctx: Context, private readonly usecase: UserUseCase) {}

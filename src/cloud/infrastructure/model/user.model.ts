@@ -1,10 +1,8 @@
 import { PrismaClient } from '@prisma/client'
-import { UserRepository } from '../repository/user.repository'
-import { UserEntity } from '../entity/user.entity'
-// import prisma from '../config/prisma.client'
+import { UserEntity } from '../../domain/entity/user.entity'
+import { UserRepository } from '../../domain/repository/user.repository'
 
 const prisma = new PrismaClient()
-
 export class UserModel implements UserRepository {
   async create(user: Omit<UserEntity, 'id' | 'createdAt' | 'updatedAt'>): Promise<UserEntity> {
     return prisma.user.create({ data: user })

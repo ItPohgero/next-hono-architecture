@@ -4,6 +4,7 @@
 	"private": true,
 	"scripts": {
 		"prepare": "bun run biome && bun run lint",
+		"postinstall": "bunx prisma generate",
 		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
