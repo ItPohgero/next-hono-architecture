@@ -1,6 +1,6 @@
-import { AppType } from "@/app/api/[...route]/route";
+import type { AppType } from "@/app/api/[...route]/route";
 import { hc } from "hono/client";
 
-const client = hc<AppType>('http://localhost:3000/')
+const client = hc<AppType>("http://localhost:3000/");
 
-export default client
+export default client;
