@@ -1,9 +1,12 @@
-import type { UserUseCase } from "@/cloud/domain/usecase/user.usecase";
+import type { UserUseCase } from "@/server/domain/usecase/user.usecase";
 import type { Context } from "hono";
 import type { UserCreateRequest } from "../dto/user.dto";
 
 class UserController {
-	constructor(private readonly ctx: Context, private readonly usecase: UserUseCase) {}
+	constructor(
+		private readonly ctx: Context,
+		private readonly usecase: UserUseCase,
+	) {}
 
 	async listUsers() {
 		const users = await this.usecase.getUsers();

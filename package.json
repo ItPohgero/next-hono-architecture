@@ -6,7 +6,7 @@
 		"prepare": "bun run biome && bun run lint",
 		"postinstall": "bunx prisma generate",
 		"dev": "next dev --turbopack",
-		"build": "next build",
+		"build": "bun run biome && next build",
 		"start": "next start",
 		"lint": "next lint",
 		"biome": "bun run biome:format && bun run biome:check && bun run biome:lint",

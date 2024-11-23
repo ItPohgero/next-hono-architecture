@@ -1,5 +1,5 @@
 "use client";
-import client from "@/cloud/config/hono.client";
+import client from "@/server/config/hono.client";
 import Image from "next/image";
 import { useEffect } from "react";
 

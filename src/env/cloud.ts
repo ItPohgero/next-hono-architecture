@@ -1,3 +1,3 @@
 export const ENV_CLOUD = {
-    PORT: process.env.PORT || 3000
-}
+	PORT: process.env.PORT || 3000,
+};

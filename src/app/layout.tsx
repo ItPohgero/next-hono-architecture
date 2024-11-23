@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/interface/styles/globals.css";
-import { geistMono, geistSans } from "@/interface/fonts/main";
 import { ENV_UI } from "@/env/ui";
+import { geistMono, geistSans } from "@/interface/fonts/main";
 
 export const metadata: Metadata = {
 	title: ENV_UI.APP_NAME,
