@@ -1,5 +1,5 @@
-import { UserEntity } from "../entity/user.entity";
-import { UserRepository } from "../repository/user.repository";
+import type { UserEntity } from "../entity/user.entity";
+import type { UserRepository } from "../repository/user.repository";
 
 export class UserUseCase {
 	constructor(private readonly userRepository: UserRepository) {}
